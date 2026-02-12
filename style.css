@@ -1,0 +1,227 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: beige;
+}
+/* Contenedor de todas las cards */
+#conCocteles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Cada card */
+.conCocteles {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.conCocteles:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Imagen del coctel */
+.conCocteles img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ff8000;
+    margin-bottom: 10px;
+}
+
+/* Título con efecto fuego */
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0 0 5px #fff, 0 0 10px orange, 0 0 15px red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Opcional: agregar transición al título */
+.conCocteles h3:hover {
+    text-shadow: 0 0 10px #fff, 0 0 15px orange, 0 0 20px red;
+}
+
+/* Botón de buscar */
+#buscar {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+#buscar:hover {
+    background-color: #ff3300;
+}
+
+/* Input */
+input[type="text"] {
+    padding: 5px 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Select */
+#categorias {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/* Contenedor de input, select y botón */
+#controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* espacio entre los elementos */
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Input de búsqueda */
+#inputBuscar {
+    padding: 8px 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#inputBuscar:focus {
+    outline: none;
+    border-color: #ff8000;
+    box-shadow: 0 0 5px rgba(255, 128, 0, 0.7);
+}
+
+/* Botón buscar */
+#btnBuscar {
+    padding: 8px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#btnBuscar:hover {
+    background-color: #ff3300;
+    transform: scale(1.05);
+}
+
+/* Select de categorías */
+#categorias {
+    padding: 8px 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#categorias:focus {
+    outline: none;
+    border-color: #ff8000;
+    box-shadow: 0 0 5px rgba(255, 128, 0, 0.7);
+}
+
+/***************************************/
+/*APARTADO DE DETALLES*/
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #ff6600;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de detalle */
+#detalles {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Card centrada */
+#detalles > div {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Imagen dentro de la card */
+#detalles img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ff8000;
+    margin-bottom: 15px;
+}
+
+/* Lista de ingredientes */
+#detalles ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+#detalles ul li {
+    margin-bottom: 5px;
+}
+
+/* Título del coctel dentro de la card */
+#detalles h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Subtítulos (Ingredientes / Instrucciones) */
+#detalles h3 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+/* Instrucciones */
+#detalles p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Link de volver */
+#detalles a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+#detalles a:hover {
+    background-color: #ff3300;
+}
