@@ -41,6 +41,8 @@ const mostrarCocteles = (cocteles) => {
 
     cocteles.forEach(c => {
         const card = document.createElement("div");
+        card.classList.add("card");
+
         card.innerHTML = `
             <h3>${c.strDrink}</h3>
             <img src="${c.strDrinkThumb}" alt="${c.strDrink}" width="150">
